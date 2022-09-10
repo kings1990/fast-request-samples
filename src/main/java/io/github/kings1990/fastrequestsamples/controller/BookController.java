@@ -18,8 +18,8 @@ public class BookController {
         return bookName;
     }
 
-    @GetMapping("testlist")
-    public List<String> testlist(@RequestParam List<String> idList) {
+    @GetMapping("queryByIds")
+    public List<String> queryByIds(@RequestParam List<String> idList) {
         return idList;
     }
 
