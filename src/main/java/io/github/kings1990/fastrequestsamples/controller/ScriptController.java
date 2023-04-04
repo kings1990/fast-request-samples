@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class ScriptController {
 
+    /**
+     * pre script test
+     * @param req
+     * @return
+     */
     @PostMapping("pre")
     public String preScriptTest(HttpServletRequest req) {
         return req.getHeader("key");

@@ -1,9 +1,9 @@
 package io.github.kings1990.fastrequestsamples.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 public class Book {
@@ -14,26 +14,36 @@ public class Book {
     /**
      * book name
      */
-    private String name;
+    private String bookName;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-//    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime createTime;
+
+    /**
+     * book description
+     */
+    private String description;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date createTime;
 
     public Book() {
     }
 
-    public Book(Integer id, String name) {
+    public Book(Integer id, String bookName) {
         this.id = id;
-        this.name = name;
+        this.bookName = bookName;
+    }
+
+    public Book(Integer id, String name,String description) {
+        this.id = id;
+        this.bookName = bookName;
+        this.description = description;
     }
 
     @Override
     public String toString() {
         return "Book{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", createTime='" + createTime + '\'' +
+                ", name='" + bookName + '\'' +
                 '}';
     }
 }

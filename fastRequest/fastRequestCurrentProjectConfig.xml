@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentProjectConfig">
+    <option name="cookieList">
+      <list>
+        <DataMapping>
+          <option name="type" value="http://localhost:8081" />
+          <option name="value" value="JSESSIONID=63D0679111409AA5681548D50A381E9F; Path" />
+        </DataMapping>
+        <DataMapping>
+          <option name="type" value="www.baidu.com" />
+          <option name="value" value="BAIDUID=D6D1280D79473F2952F2F4EA9FA072C8:FG, BIDUPSID=D6D1280D79473F29D561C918A2E2DACB; expires, PSTM=1665292079; expires, BDSVRTM=0; path, BD_HOME=1; path, H_PS_PSSID=37545_36550_37561_36885_34812_37486_37402_36569_36802_36786_37499_26350_37488; path" />
+        </DataMapping>
+      </list>
+    </option>
+
+    <option name="domain" value="http://localhost:8081" />
+    <option name="enableEnv" value="local" />
+    <option name="enableProject" value="fast-request-samples" />
+    <option name="headerList">
+      <list>
+        <DataMapping>
+          <option name="enabled" value="false" />
+          <option name="type" value="b" />
+          <option name="value" value="2" />
+        </DataMapping>
+        <DataMapping>
+          <option name="type" value="bb" />
+          <option name="value" value="1" />
+        </DataMapping>
+        <DataMapping>
+          <option name="type" value="c" />
+          <option name="value" value="1" />
+        </DataMapping>
+      </list>
+    </option>
+    <option name="showComment" value="true" />
+    <option name="syncModel">
+      <GitSyncModel>
+        <option name="domain" value="https://git.lecangs.com" />
+        <option name="enabled" value="true" />
+        <option name="owner" value="kings1990" />
+        <option name="repo" value="test" />
+        <option name="repoUrl" value="https://git.lecangs.com/kings1990/test.git" />
+        <option name="token" value="glpat-A-5d3wr1gnyyTTHUU3Rc" />
+        <option name="type" value="gitlab" />
+      </GitSyncModel>
+    </option>
+    <option name="toolWindowIconColor" value="ef82a0" />
+
+    <option name="envList">
+      <list>
+        <option value="local" />
+      </list>
+    </option>
+
+    <option name="projectList">
+      <list>
+        <option value="fast-request-samples" />
+      </list>
+    </option>
+    <option name="dataList">
+      <list>
+        <NameGroup>
+          <option name="hostGroup">
+            <list>
+              <HostGroup>
+                <option name="env" value="local" />
+                <option name="url" value="http://localhost:7001" />
+              </HostGroup>
+            </list>
+          </option>
+          <option name="name" value="fast-request-samples" />
+        </NameGroup>
+      </list>
+    </option>
+  </component>
+</project>

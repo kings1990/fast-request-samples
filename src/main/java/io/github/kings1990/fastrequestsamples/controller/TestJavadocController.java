@@ -1,10 +1,11 @@
 package io.github.kings1990.fastrequestsamples.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import io.swagger.annotations.Api;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+
+@Api(tags="javadoc test")
 @RestController
 @RequestMapping("/testJavadoc")
 public class TestJavadocController {
@@ -21,13 +22,13 @@ public class TestJavadocController {
     }
 
     /**
-     * testPathParam
+     * test request param
      * @param id some id
      * @param name some name
      * @return
      */
-    @GetMapping("/testUrlParams")
-    public String testPathParam(Integer id,String name){
+    @PostMapping("/testRequestParam")
+    public String testRequestParam(@RequestParam ArrayList<Integer> id, String name){
         return name+"+"+id;
     }
 

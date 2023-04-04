@@ -13,6 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @RequestMapping("/auth")
 public class LoginController {
+    /**
+     * 登录
+     * @param loginVo
+     * @param req
+     * @return
+     */
     @PostMapping("login")
     public LoginResponse login(@RequestBody LoginVo loginVo,HttpServletRequest req) {
         String sign = req.getHeader("sign");

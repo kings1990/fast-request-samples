@@ -9,17 +9,39 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/testUpload")
 public class UploadController {
 
-    @PostMapping("upload")
-    public void upload(MultipartParam multipartParam) {
+    /**
+     * upload single file
+     * @param file
+     */
+    @PostMapping("uploadSingle")
+    public void uploadSingle(@RequestParam MultipartFile file) {
         System.out.println(1);
     }
 
-    @PostMapping("upload1")
-    public void upload1(@RequestParam MultipartFile file) {
+    /**
+     * upload single file with entity
+     * @param multipartParam
+     */
+    @PostMapping("uploadSingleWithEntity")
+    public void uploadSingleWithEntity(MultipartParam multipartParam) {
         System.out.println(1);
     }
 
-    @PostMapping("upload3")
+
+    /**
+     * upload multiple file
+     * @param file
+     */
+    @PostMapping("uploadMultiple")
+    public void uploadMultiple(@RequestPart MultipartFile[] file) {
+        System.out.println(1);
+    }
+
+    /**
+     * mix upload file
+     * @param file
+     */
+    @PostMapping("mixUpload")
     public void upload3(@RequestPart MultipartFile file, Book book) {
         System.out.println(1);
     }

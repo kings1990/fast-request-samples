@@ -5,6 +5,12 @@ import lombok.Data;
 
 @Data
 public class LoginVo {
+    /**
+     * username
+     */
     private String username;
+    /**
+     * password
+     */
     private String password;
 }
