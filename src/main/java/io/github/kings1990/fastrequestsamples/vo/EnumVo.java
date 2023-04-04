@@ -6,6 +6,10 @@ import lombok.Data;
 @Data
 public class EnumVo {
     private Integer id;
-    @ApiModelProperty(example = "MANAGEMENT_CONTROL_HIERARCHY")
-    private Model model;
+    @ApiModelProperty(example = "Saturday")
+    private Week model;
+    
+    public static enum Week{
+        Monday, Tuesday, Wednesday, Thursday, Friday,Saturday, Sunday
+    }
 }
