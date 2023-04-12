@@ -19,14 +19,11 @@
 		"dev"
 	],
 	"headerList":[],
-	"headerStrategyId":1,
-	"ignoreDomain":true,
 	"postScript":"",
 	"preScript":"",
 	"projectList":[
 		"fast-request-samples"
 	],
-	"showComment":true,
 	"syncModel":{
 		"domain":"https://git.lecangs.com",
 		"enabled":true,
@@ -40,6 +37,5 @@
 	},
 	"urlEncodedKeyValueList":[],
 	"urlParamsKeyValueList":[],
-	"urlSpit":0,
 	"urlSuffix":""
 }
