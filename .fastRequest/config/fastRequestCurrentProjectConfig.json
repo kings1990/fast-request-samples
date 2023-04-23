@@ -1,0 +1,37 @@
+{
+	"dataList":[
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8081"
+				}
+			],
+			"name":"fast-request-samples"
+		}
+	],
+	"envList":[
+		"local"
+	],
+	"headerList":[],
+	"postScript":"",
+	"preScript":"",
+	"projectList":[
+		"fast-request-samples"
+	],
+	"syncModel":{
+		"branch":"master",
+		"domain":"https://github.com",
+		"enabled":true,
+		"namingPolicy":"byDoc",
+		"owner":"kings1990",
+		"repo":"test",
+		"repoUrl":"https://github.com/kings1990/test.git",
+		"syncAfterRun":false,
+		"token":"",
+		"type":"github"
+	},
+	"urlEncodedKeyValueList":[],
+	"urlParamsKeyValueList":[],
+	"urlSuffix":""
+}
