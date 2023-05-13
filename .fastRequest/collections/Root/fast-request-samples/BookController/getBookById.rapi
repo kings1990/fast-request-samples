@@ -1,0 +1,43 @@
+{
+	"activeGroup":"Default",
+	"apiParamGroup":{},
+	"childList":[],
+	"description":"",
+	"directory":"~.fastRequest~collections~ROOT~fast-request-samples~BookController",
+	"domain":"http://localhost:8081",
+	"enableEnv":"local",
+	"enableProject":"fast-request-samples",
+	"filePath":"~.fastRequest~collections~ROOT~fast-request-samples~BookController~getBookById.rapi",
+	"headerList":[
+		{
+			"enabled":true,
+			"type":"Content-Type",
+			"value":"application/json"
+		}
+	],
+	"id":"api_io.github.kings1990.fastrequestsamples.controller.BookController.getBookById",
+	"name":"book detail by id",
+	"paramGroup":{
+		"bodyKeyValueListJson":"",
+		"className":"io.github.kings1990.fastrequestsamples.controller.BookController",
+		"jsonDocument":"",
+		"method":"getBookById",
+		"methodDescription":"book detail by id",
+		"methodType":"GET",
+		"multipartKeyValueListJson":"[]",
+		"originUrl":"/book/{id}",
+		"pathParamsKeyValueListJson":"[{\"comment\":\"xxxid\",\"customFlag\":2,\"enabled\":true,\"key\":\"id\",\"type\":\"Number\",\"value\":\"1\"}]",
+		"postScript":"",
+		"postType":"json",
+		"preScript":"",
+		"returnDocument":"{\"taskSettleList\":[{\"ruleId\":\"规则id\",\"userId\":\"用户id\",\"ratingId\":\"评级id\",\"positionId\":\"职位id\",\"departId\":\"部门id\",\"productId\":\"作品id\",\"platformId\":\"平台id\",\"stageId\":\"阶段id\",\"taskId\":\"任务id\",\"settleId\":\"结算id\",\"unitPrice\":\"单价\",\"calcCount\":\"结算数量\",\"calcUnit\":\"结算单位\",\"resultPrice\":\"价格\",\"moneyType\":\"币种\",\"formula\":\"公式\",\"priceCalcType\":\"价格计算类型\",\"level\":\"评级\",\"levelBasePrice\":\"人员等级单价基数\",\"factor\":\"系数\",\"id\":\"主键，自增，无符号\",\"gmtCreate\":\"数据创建时间\",\"dataIds\":[1]}],\"id\":\"book id\",\"bookName\":\"book name\",\"description\":\"book description\",\"createTime\":\"No comment,Type =String\"}",
+		"tempId":"",
+		"url":"/book/1",
+		"urlEncodedKeyValueListJson":"[]",
+		"urlEncodedKeyValueListText":"",
+		"urlParamsKeyValueListJson":"[]",
+		"urlParamsKeyValueListText":""
+	},
+	"tempId":"api_io.github.kings1990.fastrequestsamples.controller.BookController.getBookById",
+	"type":2
+}

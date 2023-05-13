@@ -4,19 +4,68 @@
 			"hostGroup":[
 				{
 					"env":"local",
+					"url":"http://localhost:8080"
+				},
+				{
+					"env":"dev",
+					"url":"http://127.0.0.1:9090/demo"
+				}
+			],
+			"name":"hfrdp3-api"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
+					"url":"http://localhost:8080"
+				},
+				{
+					"env":"dev",
+					"url":"http://localhost:80801"
+				}
+			],
+			"name":"hfrdp-api-base"
+		},
+		{
+			"hostGroup":[
+				{
+					"env":"local",
 					"url":"http://localhost:8081"
+				},
+				{
+					"env":"dev",
+					"url":"a"
 				}
 			],
 			"name":"fast-request-samples"
 		}
 	],
 	"envList":[
-		"local"
+		"local",
+		"dev"
 	],
-	"headerList":[],
+	"headerList":[
+		{
+			"enabled":true,
+			"type":"a",
+			"value":"1"
+		},
+		{
+			"enabled":true,
+			"type":"b",
+			"value":"2"
+		},
+		{
+			"enabled":true,
+			"type":"c",
+			"value":"3"
+		}
+	],
 	"postScript":"",
 	"preScript":"",
 	"projectList":[
+		"hfrdp3-api",
+		"hfrdp-api-base",
 		"fast-request-samples"
 	],
 	"syncModel":{

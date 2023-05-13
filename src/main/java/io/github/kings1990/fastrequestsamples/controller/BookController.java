@@ -2,13 +2,14 @@ package io.github.kings1990.fastrequestsamples.controller;
 
 
 import io.github.kings1990.fastrequestsamples.vo.Book;
+import io.github.kings1990.fastrequestsamples.vo.TaskSettle;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Book controller
@@ -16,6 +17,17 @@ import java.util.List;
 @RestController
 @RequestMapping("/book")
 public class BookController {
+
+    @PostMapping("/aaaa")
+    public String aaaa(@RequestBody List<TaskSettle> list) throws IOException {
+        return "";
+    }
+
+    @PostMapping("/bbbbb")
+    public String bbbb(@RequestBody Map<String,Object> map) throws IOException {
+        return "";
+    }
+
 
 
     /**
@@ -66,46 +78,9 @@ public class BookController {
      * @return
      */
     @PatchMapping("updateBookName")
-    public Book updateBookName(Book book) {
+    public Book updateBookName(@RequestBody Book book) {
         return book;
     }
-
-
-    /**
-     * 测试1
-     * @param bookName
-     * @return
-     */
-    @GetMapping("test1")
-    public String test1(@RequestParam String bookName) {
-        return bookName;
-    }
-
-    /**
-     * test2
-     * @param bookName
-     * @param response
-     * @return
-     * @throws IOException
-     */
-    @GetMapping("test2")
-    public String test2(@RequestParam String bookName, HttpServletResponse response) throws IOException {
-        response.sendRedirect("/book/test3");
-        return "";
-    }
-
-    /**
-     * test3 method
-     * @return
-     */
-    @GetMapping("test3")
-    public String test3() {
-        return "";
-    }
-
-
-
-
 
     /**
      * search by book name
