@@ -2,14 +2,11 @@ package io.github.kings1990.fastrequestsamples.controller;
 
 
 import io.github.kings1990.fastrequestsamples.vo.Book;
-import io.github.kings1990.fastrequestsamples.vo.TaskSettle;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Book controller
@@ -17,18 +14,6 @@ import java.util.Map;
 @RestController
 @RequestMapping("/book")
 public class BookController {
-
-    @PostMapping("/aaaa")
-    public String aaaa(@RequestBody List<TaskSettle> list) throws IOException {
-        return "";
-    }
-
-    @PostMapping("/bbbbb")
-    public String bbbb(@RequestBody Map<String,Object> map) throws IOException {
-        return "";
-    }
-
-
 
     /**
      * book detail by id
